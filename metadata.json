@@ -1,0 +1,6 @@
+{
+  "name": "University HR Management System",
+  "description": "A professional C++ OOP project applying MVC pattern, SOLID principles, and advanced C++ features for university human resources management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["C++20", "OOP", "MVC", "File Persistence"]
+}
