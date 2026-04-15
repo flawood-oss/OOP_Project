@@ -2,21 +2,23 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "cppbuild",
-            "label": "C/C++: g++ build active file",
-            "command": "/usr/bin/g++",
+            "type": "shell",
+            "label": "C/C++: g++ build project",
+            "command": "g++",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "-std=c++20",
-                "-I${workspaceFolder}/include",
-                "${workspaceFolder}/src/models/*.cpp",
-                "${workspaceFolder}/src/controllers/*.cpp",
-                "${workspaceFolder}/src/views/*.cpp",
-                "${workspaceFolder}/src/utils/*.cpp",
+                "-I", "${workspaceFolder}/include",
+                "${workspaceFolder}/src/models/Person.cpp",
+                "${workspaceFolder}/src/models/Student.cpp",
+                "${workspaceFolder}/src/models/Lecturer.cpp",
+                "${workspaceFolder}/src/models/HRManager.cpp",
+                "${workspaceFolder}/src/controllers/AppController.cpp",
+                "${workspaceFolder}/src/views/ConsoleView.cpp",
                 "${workspaceFolder}/main.cpp",
                 "-o",
-                "${workspaceFolder}/UniversityManagement"
+                "${workspaceFolder}/UniversityManagement.exe"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -28,7 +30,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "compiler: /usr/bin/g++"
+            "detail": "Compile all project on Windows"
         }
     ]
 }
